@@ -1,0 +1,367 @@
+@use "lib/lib" as l;
+@use "common" as c;
+
+
+$color-bg-card: #FCFDFF;
+
+///////////////////////////////////////////////////////////////////
+/// 
+/// 
+/// MV
+/// 
+///
+.sec-support-mv {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/bg-mv-support.png);
+
+  @include l.sp() {
+    background-size: 90vw;
+    background-position: top right;
+  }
+  @include l.pc() {
+    height: 430px;
+    background-position: top right;
+  }
+  @include l.pc(768) {
+    background-position: top right;
+  }
+}
+
+.sec-support-lead {
+  background-color: c.$color-bg-gray;
+  color: c.$color-black;
+
+  @include l.sp() {
+    padding-block: l.minvw(50);
+  }
+
+  @include l.pc() {
+    padding-block: 100px;
+  }
+
+  &_items {
+    display: flex;
+
+    @include l.sp() {
+      flex-direction: column;
+      gap: l.minvw(50);
+    }
+
+    @include l.pc() {
+      gap: 56px;
+    }
+
+    &_txt {
+      @include l.sp() {
+        width: 100%;
+      }
+
+      @include l.pc() {
+        max-width: 50%;
+      }
+
+      &_hd4 {
+        color: c.$color-primary;
+        line-height: 1.4;
+
+        @include l.sp() {
+          font-size: l.rem(25);
+        }
+
+        @include l.pc() {
+          font-size: 32px;
+        }
+      }
+
+      &_p {
+        line-height: 1.7;
+
+        @include l.sp() {
+          margin-top: l.minvw(42);
+        }
+
+        @include l.pc() {
+          margin-top: 42px;
+        }
+      }
+    }
+
+    &_img {
+      object-fit: cover;
+
+      @include l.sp() {
+        width: 100%;
+      }
+
+      @include l.pc() {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+.sec-support-case {
+  color: c.$color-black;
+
+  @include l.sp() {
+    padding-block: l.minvw(50);
+  }
+
+  @include l.pc() {
+    padding-block: 100px;
+  }
+
+  &_ttl {
+    margin-inline: auto;
+    text-align: center;
+
+    @include l.sp() {
+      margin-bottom: l.minvw(72);
+    }
+
+    @include l.pc() {
+      margin-bottom: 72px;
+    }
+
+    &_small {
+      font-weight: bold;
+      color: c.$color-secondary;
+
+      @include l.sp() {
+        font-size: l.rem(20);
+      }
+
+      @include l.pc() {
+        font-size: 24px;
+      }
+    }
+
+    &_hd3 {
+      position: relative;
+
+      @include l.sp() {
+        font-size: l.rem(43);
+        margin-top: l.minvw(16);
+      }
+
+      @include l.pc() {
+        font-size: 54px;
+        margin-top: 16px;
+      }
+
+      &::after {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        content: '';
+        height: 3px;
+        background-color: c.$color-secondary;
+
+        @include l.sp() {
+          bottom: l.minvw(-16);
+          width: l.minvw(64);
+        }
+
+        @include l.pc() {
+          bottom: -32px;
+          width: 64px;
+        }
+      }
+    }
+  }
+
+  &_list {
+    &_item {
+      background-color: $color-bg-card;
+      border: 1px solid c.$color-border-default;
+      border-radius: 10px;
+
+      @include l.sp() {
+        padding: l.minvw(36);
+      }
+
+      @include l.pc() {
+        padding: 72px;
+      }
+
+      &:not(:first-child) {
+        @include l.sp() {
+          margin-top: l.minvw(32);
+        }
+        @include l.pc() {
+          margin-top: 32px;
+        }
+      }
+
+      &_hd4 {
+        position: relative;
+        color: c.$color-primary;
+        line-height: 1.4;
+        
+        @include l.sp() {
+          padding-left: l.minvw(24);
+          font-size: l.rem(25);
+        }
+        
+        @include l.pc() {
+          padding-left: 24px;
+          font-size: 32px;
+        }
+
+        &::before {
+          position: absolute;
+          left: 0;
+          content: '';
+          width: 5px;
+          height: 100%;
+          background-color: c.$color-primary;
+        }
+      }
+
+      &_inner {
+        display: flex;
+        @include l.sp(768) {
+          flex-direction: column;
+          gap: l.minvw(36);
+          margin-top: l.minvw(32);
+        }
+        @include l.pc(768) {
+          align-items: flex-start;
+          gap: 56px;
+          margin-top: 32px;
+        }
+
+        &_left {
+          @include l.sp(768) {
+            width: 100%;
+          }
+          @include l.pc(768) {
+            max-width: 50%;
+          }
+
+          &_txt {
+            &_p {
+              font-weight: 500;
+              line-height: 1.6;
+              @include l.sp() {
+                font-size: l.rem(15);
+              }
+              @include l.pc() {
+                font-size: 18px;
+              }
+            }
+
+            &_list {
+              display: flex;
+              flex-wrap: wrap;
+              @include l.sp() {
+                margin-top: l.minvw(30);
+              }
+              @include l.pc() {
+                margin-top: 30px;
+              }
+
+              dt {
+                width: 30%;
+                padding-block: 5px;
+                line-height: 1.8;
+                font-weight: 500;
+                border-top: 1px solid c.$color-border-default;
+                @include l.sp() {
+                  font-size: l.rem(13);
+                }
+                &:last-of-type {
+                  border-bottom: 1px solid c.$color-border-default;
+                }
+              }
+
+              dd {
+                width: 70%;
+                padding-block: 5px;
+                line-height: 1.8;
+                border-top: 1px solid c.$color-border-default;
+                @include l.sp() {
+                  font-size: l.rem(13);
+                }
+                &:last-of-type {
+                  border-bottom: 1px solid c.$color-border-default;
+                }
+              }
+            }
+
+            &_link {
+              position: relative;
+              display: inline-block;
+              font-weight: bold;
+              color: c.$color-primary;
+              transition: .3s ease-out;
+              @include l.sp() {
+                margin-top: l.minvw(30);
+                padding-left: l.minvw(6);
+                padding-right: l.minvw(28);
+                font-size: l.rem(15);
+              }
+              @include l.pc() {
+                margin-top: 30px;
+                padding-left: 6px;
+                padding-right: 28px;
+                font-size: 18px;
+              }
+              &:hover {
+                opacity: .7;
+              }
+
+              &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: c.$color-primary;
+                @include l.sp() {
+                  bottom: l.minvw(-6);
+                  left: l.minvw(-6);
+                }
+                @include l.pc() {
+                  bottom: -6px;
+                  left: -6px;
+                }
+              }
+
+              &::after {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%228%22%20height%3D%2212%22%20viewBox%3D%220%200%208%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1.25293%2010.2359L6.99609%205.77836L1.25293%201.3208%22%20stroke%3D%22%230096E0%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
+                @include l.sp() {
+                  right: l.minvw(10);
+                  width: l.minvw(8);
+                  height: l.minvw(12);
+                }
+                @include l.pc() {
+                  right: 10px;
+                  width: 8px;
+                  height: 12px;
+                }
+              }
+            }
+          }
+        }
+
+        &_right {
+          @include l.sp(768) {
+            width: 100%;
+          }
+          @include l.pc(768) {
+            max-width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include l.sp() {}
+
+@include l.pc() {}
