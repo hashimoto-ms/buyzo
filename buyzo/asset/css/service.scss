@@ -14,7 +14,7 @@
   //   background-size: 40vw;
   // }
   @include l.sp() {
-    background-size: 80vw;
+    background-size: 55vw;
     background-position: top right;
   }
   @include l.pc() {

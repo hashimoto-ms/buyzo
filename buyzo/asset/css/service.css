@@ -2248,7 +2248,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-mv {
-    background-size: 80vw;
+    background-size: 55vw;
     background-position: top right;
   }
 }
