@@ -2319,6 +2319,7 @@ html.lenis body {
   border: 1px solid #DADCDE;
   border-radius: 5px;
   background-color: #FCFDFF;
+  background: url(../img/case_arrow.svg) no-repeat bottom 1em right 40px;
 }
 @media only screen and (max-width: 640px) {
   .sec-case_list_item,
@@ -2351,6 +2352,7 @@ html.lenis body {
   flex-direction: column;
   color: #2C3244;
   transition: 0.3s ease-out;
+  margin-bottom: 24px;
 }
 @media only screen and (max-width: 640px) {
   .sec-case_list_item_link,

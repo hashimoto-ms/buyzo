@@ -72,7 +72,7 @@ $color-blue : #17C4D3;
       border: 1px solid c.$color-border-default;
       border-radius: 5px;
       background-color: $color-bg-card;
-
+      background: url(../img/case_arrow.svg) no-repeat bottom 1em right 40px;
       @include l.sp() {
         width: 100%;
       }
@@ -103,6 +103,7 @@ $color-blue : #17C4D3;
         flex-direction: column;
         color: c.$color-black;
         transition: .3s ease-out;
+        margin-bottom: 24px;
 
         @include l.sp() {
           padding: l.minvw(39) l.minvw(27);
