@@ -2646,6 +2646,21 @@ html.lenis body {
     margin-top: 24px;
   }
 }
+.article_table {
+  border-collapse: collapse;
+}
+.article_table th, .article_table td {
+  padding: 1em;
+  border: 1px solid #fff;
+  line-height: 1.4;
+}
+.article_table th {
+  background-color: #0096E0;
+  color: #fff;
+}
+.article_table td {
+  border: 1px solid #0096E0;
+}
 .article strong {
   font-weight: bold;
 }

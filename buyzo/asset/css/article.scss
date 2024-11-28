@@ -357,6 +357,22 @@ $color-blue : #17C4D3;
     }
   }
 
+  &_table {
+    border-collapse: collapse;
+    th, td {
+      padding: 1em;
+      border: 1px solid c.$color-white;
+      line-height: 1.4;
+    }
+    th {
+      background-color: c.$color-primary;
+      color: c.$color-white;
+    }
+    td {
+      border: 1px solid c.$color-primary;
+    }
+  }
+
   strong {
     font-weight: bold;
     &.blue {
