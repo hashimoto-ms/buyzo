@@ -1544,6 +1544,7 @@ main:has(.bg-fix) {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -1565,13 +1566,29 @@ main:has(.bg-fix) {
   border-radius: 10px;
   border: 1px solid #DADCDE;
   position: relative;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .difference-area {
+    padding-bottom: 50vw;
+  }
+}
+.difference-area_bg {
+  position: absolute;
+  aspect-ratio: 550/752;
+}
+@media only screen and (max-width: 768px) {
+  .difference-area_bg {
+    width: 70%;
+    bottom: -30vw;
+    right: 0;
+  }
 }
 @media only screen and (min-width: 769px) {
-  .difference-area {
-    background-repeat: no-repeat;
-    background-image: url(../img/top-function-bg-01.png);
-    background-size: 50%;
-    background-position: bottom right;
+  .difference-area_bg {
+    width: min((550 / var(--content-width)) * 100vw, 550 * 1px);
+    right: min((-60 / var(--content-width)) * 100vw, -60 * 1px);
+    bottom: min((-80 / var(--content-width)) * 100vw, -80 * 1px);
   }
 }
 @media only screen and (max-width: 640px) {

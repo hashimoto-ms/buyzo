@@ -1725,6 +1725,7 @@ main:has(.bg-fix) {
       display: grid;
       gap: 20px;
       grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
     }
     @include l.pc(768) {
       grid-template-columns: repeat(2, 400px);
