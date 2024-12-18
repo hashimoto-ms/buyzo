@@ -1995,7 +1995,8 @@ input.btn_download {
     @include l.remrp(46, 24);
   }
   &_list {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     border-radius: 10px;
     @include l.sp() {
       gap: 10px;
@@ -2012,7 +2013,7 @@ input.btn_download {
       align-items: center;
       @include l.sp() {
         padding: 10px 15px;
-      }      
+      }
       @include l.pc() {
         padding: 1em 2em;
       }

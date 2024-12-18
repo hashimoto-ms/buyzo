@@ -643,7 +643,7 @@ img {
   .header_right {
     align-items: center;
     justify-content: center;
-    padding-right: min((28 / var(--content-width)) * 100vw, 28 * 1px);
+    padding-right: min(28 / var(--content-width) * 100vw, 28 * 1px);
   }
 }
 @media only screen and (min-width: 1026px) {
@@ -703,12 +703,12 @@ img {
 @media only screen and (max-width: 1024px) {
   .header_nav {
     width: 100%;
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 1026px) {
   .header_nav {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 .header_nav_items {
@@ -800,7 +800,7 @@ main {
   display: inline;
   word-break: break-all;
   margin-right: 1em;
-  font-size: calc((13 / var(--em)) * 1rem);
+  font-size: calc(13 / var(--em) * 1rem);
 }
 .footer_logo {
   background-color: #F5F6FA;
@@ -808,7 +808,7 @@ main {
 }
 @media only screen and (max-width: 640px) {
   .footer_logo {
-    padding-block: min((50 / var(--content-width)) * 100vw, 50 * 1px);
+    padding-block: min(50 / var(--content-width) * 100vw, 50 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -818,7 +818,7 @@ main {
 }
 @media only screen and (max-width: 640px) {
   .footer_logo_img {
-    width: min((220 / var(--content-width)) * 100vw, 220 * 1px);
+    width: min(220 / var(--content-width) * 100vw, 220 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -833,7 +833,7 @@ main {
 }
 @media only screen and (max-width: 640px) {
   .footer_sns {
-    padding-block: min((30 / var(--content-width)) * 100vw, 30 * 1px);
+    padding-block: min(30 / var(--content-width) * 100vw, 30 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -853,25 +853,25 @@ main {
 }
 @media only screen and (max-width: 640px) {
   .footer_links_01_links {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    padding-block: min((40 / var(--content-width)) * 100vw, 40 * 1px);
+    padding-block: min(40 / var(--content-width) * 100vw, 40 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
   .footer_links_01_links {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
-    padding-block: min((40 / var(--content-width)) * 100vw, 40 * 1px);
+    padding-block: min(40 / var(--content-width) * 100vw, 40 * 1px);
   }
 }
 @media only screen and (min-width: 1026px) {
   .footer_links_01_links {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 .footer_links_01_links_item {
@@ -905,19 +905,19 @@ main {
 @media only screen and (max-width: 640px) {
   .footer_links_02_links {
     flex-direction: column;
-    font-size: calc((13 / var(--em)) * 1rem);
-    padding-block: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    font-size: calc(13 / var(--em) * 1rem);
+    padding-block: min(20 / var(--content-width) * 100vw, 20 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
   .footer_links_02_links {
-    font-size: calc((13 / var(--em)) * 1rem);
-    padding-block: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    font-size: calc(13 / var(--em) * 1rem);
+    padding-block: min(20 / var(--content-width) * 100vw, 20 * 1px);
   }
 }
 @media only screen and (min-width: 1026px) {
   .footer_links_02_links {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
     padding-block: 21px;
   }
 }
@@ -941,13 +941,13 @@ main {
 }
 @media only screen and (max-width: 640px) {
   .footer_cr {
-    font-size: calc((12 / var(--em)) * 1rem);
+    font-size: calc(12 / var(--em) * 1rem);
     padding-block: 1.5em;
   }
 }
 @media only screen and (min-width: 641px) {
   .footer_cr {
-    font-size: calc((12 / var(--em)) * 1rem);
+    font-size: calc(12 / var(--em) * 1rem);
     padding-block: 22px 20px;
   }
 }
@@ -987,11 +987,10 @@ main:has(.bg-fix) {
 @media only screen and (max-width: 640px) {
   .lower-mv {
     background-image: url(../img/bg-lower-mv-sp.png);
-    min-height: min((250 / var(--content-width)) * 100vw, 250 * 1px);
-    height: -webkit-fit-content;
+    min-height: min(250 / var(--content-width) * 100vw, 250 * 1px);
     height: -moz-fit-content;
     height: fit-content;
-    padding-block: min((60 / var(--content-width)) * 100vw, 60 * 1px) min((40 / var(--content-width)) * 100vw, 40 * 1px);
+    padding-block: min(60 / var(--content-width) * 100vw, 60 * 1px) min(40 / var(--content-width) * 100vw, 40 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -1017,13 +1016,13 @@ main:has(.bg-fix) {
 @media only screen and (max-width: 640px) {
   .lower-mv .breadcrumb_list {
     padding-inline: 4vw;
-    font-size: calc((11 / var(--em)) * 1rem);
+    font-size: calc(11 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .lower-mv .breadcrumb_list {
     padding-inline: 2em;
-    font-size: calc((12 / var(--em)) * 1rem);
+    font-size: calc(12 / var(--em) * 1rem);
   }
 }
 .lower-mv .breadcrumb_list::-webkit-scrollbar {
@@ -1067,12 +1066,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .lower-mv_ttl strong {
-    font-size: calc((24 / var(--em)) * 1rem);
+    font-size: calc(24 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .lower-mv_ttl strong {
-    font-size: calc((40 / var(--em)) * 1rem);
+    font-size: calc(40 / var(--em) * 1rem);
   }
 }
 .lower-mv_ttl span {
@@ -1084,12 +1083,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .lower-mv_ttl span {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .lower-mv_ttl span {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 .lower-mv_ttl span::before {
@@ -1121,22 +1120,22 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .lower-mv_txt_sup {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .lower-mv_txt_sup {
-    font-size: calc((24 / var(--em)) * 1rem);
+    font-size: calc(24 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
   .lower-mv_txt_main {
-    font-size: calc((24 / var(--em)) * 1rem);
+    font-size: calc(24 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .lower-mv_txt_main {
-    font-size: calc((40 / var(--em)) * 1rem);
+    font-size: calc(40 / var(--em) * 1rem);
   }
 }
 .lower-mv_txt_summary {
@@ -1146,12 +1145,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .lower-mv_txt_summary {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .lower-mv_txt_summary {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 .lower-mv_txt_summary li {
@@ -1176,12 +1175,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .lower-mv_txt_lead {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .lower-mv_txt_lead {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 .lower-mv_txt .btn_download::after {
@@ -1250,12 +1249,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .modal_header_hd {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .modal_header_hd {
-    font-size: calc((30 / var(--em)) * 1rem);
+    font-size: calc(30 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
@@ -1273,7 +1272,7 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .modal_main {
-    margin-top: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    margin-top: min(20 / var(--content-width) * 100vw, 20 * 1px);
     padding: 1em;
   }
 }
@@ -1307,22 +1306,22 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .modal_main_hd span {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .modal_main_hd span {
-    font-size: calc((20 / var(--em)) * 1rem);
+    font-size: calc(20 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
   .modal_main_hd strong {
-    font-size: calc((30 / var(--em)) * 1rem);
+    font-size: calc(30 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .modal_main_hd strong {
-    font-size: calc((24 / var(--em)) * 1rem);
+    font-size: calc(24 / var(--em) * 1rem);
   }
 }
 .modal_main_content {
@@ -1330,7 +1329,7 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .modal_main_content {
-    margin-top: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    margin-top: min(20 / var(--content-width) * 100vw, 20 * 1px);
     padding: 1em;
   }
 }
@@ -1387,7 +1386,7 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .hd-underline::after, .hd-underline_icon::after {
-    width: min((30 / var(--content-width)) * 100vw, 30 * 1px);
+    width: min(30 / var(--content-width) * 100vw, 30 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -1403,29 +1402,28 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .hd-underline_sup {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .hd-underline_sup {
-    font-size: calc((24 / var(--em)) * 1rem);
+    font-size: calc(24 / var(--em) * 1rem);
   }
 }
 .hd-underline_hd {
   display: block;
   margin-inline: auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 @media only screen and (max-width: 640px) {
   .hd-underline_hd {
-    font-size: calc((28 / var(--em)) * 1rem);
+    font-size: calc(28 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .hd-underline_hd {
-    font-size: calc((64 / var(--em)) * 1rem);
+    font-size: calc(64 / var(--em) * 1rem);
   }
 }
 .hd-underline_hd strong {
@@ -1433,12 +1431,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .hd-underline_hd small {
-    font-size: calc((20 / var(--em)) * 1rem);
+    font-size: calc(20 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .hd-underline_hd small {
-    font-size: calc((54 / var(--em)) * 1rem);
+    font-size: calc(54 / var(--em) * 1rem);
   }
 }
 .hd-underline_hd + .hd-underline_sup {
@@ -1489,12 +1487,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .hd-number_num {
-    font-size: calc((22 / var(--em)) * 1rem);
+    font-size: calc(22 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .hd-number_num {
-    font-size: calc((35 / var(--em)) * 1rem);
+    font-size: calc(35 / var(--em) * 1rem);
   }
 }
 .hd-number_hd {
@@ -1502,12 +1500,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .hd-number_hd {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .hd-number_hd {
-    font-size: calc((32 / var(--em)) * 1rem);
+    font-size: calc(32 / var(--em) * 1rem);
   }
 }
 
@@ -1518,7 +1516,7 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .cv-area, .cv-area.fill {
-    padding-block: min((30 / var(--content-width)) * 100vw, 30 * 1px);
+    padding-block: min(30 / var(--content-width) * 100vw, 30 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -1586,9 +1584,9 @@ main:has(.bg-fix) {
 }
 @media only screen and (min-width: 769px) {
   .difference-area_bg {
-    width: min((550 / var(--content-width)) * 100vw, 550 * 1px);
-    right: min((-60 / var(--content-width)) * 100vw, -60 * 1px);
-    bottom: min((-80 / var(--content-width)) * 100vw, -80 * 1px);
+    width: min(550 / var(--content-width) * 100vw, 550 * 1px);
+    right: min(-60 / var(--content-width) * 100vw, -60 * 1px);
+    bottom: min(-80 / var(--content-width) * 100vw, -80 * 1px);
   }
 }
 @media only screen and (max-width: 640px) {
@@ -1609,12 +1607,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .difference-area_copy {
-    font-size: calc((32 / var(--em)) * 1rem);
+    font-size: calc(32 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .difference-area_copy {
-    font-size: calc((48 / var(--em)) * 1rem);
+    font-size: calc(48 / var(--em) * 1rem);
   }
 }
 .difference-area_sub {
@@ -1624,12 +1622,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .difference-area_sub {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .difference-area_sub {
-    font-size: calc((34 / var(--em)) * 1rem);
+    font-size: calc(34 / var(--em) * 1rem);
   }
 }
 .difference-area_txt {
@@ -1637,22 +1635,22 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .difference-area_txt {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .difference-area_txt {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
   .difference-area .btn_icon_rect {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .difference-area .btn_icon_rect {
-    font-size: calc((20 / var(--em)) * 1rem);
+    font-size: calc(20 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
@@ -1684,12 +1682,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .box-explanation_hd {
-    font-size: calc((17 / var(--em)) * 1rem);
+    font-size: calc(17 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .box-explanation_hd {
-    font-size: calc((20 / var(--em)) * 1rem);
+    font-size: calc(20 / var(--em) * 1rem);
   }
 }
 .box-explanation_txt {
@@ -1699,12 +1697,12 @@ main:has(.bg-fix) {
 }
 @media only screen and (max-width: 640px) {
   .box-explanation_txt {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .box-explanation_txt {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 
@@ -1724,7 +1722,6 @@ input.btn_download {
   justify-content: center;
   align-items: center;
   padding: 1em;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 3em;
@@ -1759,12 +1756,12 @@ input.btn_download {
 }
 @media only screen and (max-width: 640px) {
   .btn_download {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .btn_download {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 .btn_download::before {
@@ -1798,12 +1795,12 @@ input.btn_download {
 }
 @media only screen and (max-width: 640px) {
   .btn_contact {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .btn_contact {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 .btn_contact::before {
@@ -1851,12 +1848,12 @@ input.btn_download {
 }
 @media only screen and (max-width: 640px) {
   .btn_icon_rect {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .btn_icon_rect {
-    font-size: calc((20 / var(--em)) * 1rem);
+    font-size: calc(20 / var(--em) * 1rem);
   }
 }
 .btn_icon_rect::after {
@@ -1878,7 +1875,7 @@ input.btn_download {
 }
 @media only screen and (max-width: 640px) {
   .client-area {
-    padding-top: min((30 / var(--content-width)) * 100vw, 30 * 1px);
+    padding-top: min(30 / var(--content-width) * 100vw, 30 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -1896,7 +1893,7 @@ input.btn_download {
 }
 @media only screen and (min-width: 641px) {
   .client-area_inner {
-    padding: 40px min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    padding: 40px min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 .client-area_ttl {
@@ -1906,33 +1903,27 @@ input.btn_download {
 }
 @media only screen and (max-width: 640px) {
   .client-area_ttl {
-    font-size: calc((24 / var(--em)) * 1rem);
+    font-size: calc(24 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .client-area_ttl {
-    font-size: calc((46 / var(--em)) * 1rem);
+    font-size: calc(46 / var(--em) * 1rem);
   }
 }
 .client-area_list {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   border-radius: 10px;
 }
 @media only screen and (max-width: 640px) {
   .client-area_list {
-    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 }
 @media only screen and (min-width: 641px) {
   .client-area_list {
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .client-area_list {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 .client-area_list li {
@@ -1961,7 +1952,7 @@ input.btn_download {
 
 @media only screen and (max-width: 640px) {
   .sec-buyzo-case {
-    padding-block: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    padding-block: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -1975,7 +1966,7 @@ input.btn_download {
 }
 @media only screen and (max-width: 768px) {
   .sec-buyzo-case_list_wrap {
-    margin-top: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    margin-top: min(20 / var(--content-width) * 100vw, 20 * 1px);
   }
 }
 @media only screen and (min-width: 769px) {
@@ -2071,12 +2062,12 @@ input.btn_download {
 }
 @media only screen and (max-width: 640px) {
   .sec-buyzo-case_item_txt {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-buyzo-case_item_txt {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 .sec-buyzo-case_item_ttl {
@@ -2088,12 +2079,12 @@ input.btn_download {
 }
 @media only screen and (max-width: 640px) {
   .sec-buyzo-case_item_ttl {
-    font-size: calc((15 / var(--em)) * 1rem);
+    font-size: calc(15 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-buyzo-case_item_ttl {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 .sec-buyzo-case_item_info {
@@ -2104,12 +2095,12 @@ input.btn_download {
 }
 @media only screen and (max-width: 640px) {
   .sec-buyzo-case_item_info {
-    font-size: calc((13 / var(--em)) * 1rem);
+    font-size: calc(13 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-buyzo-case_item_info {
-    font-size: calc((15 / var(--em)) * 1rem);
+    font-size: calc(15 / var(--em) * 1rem);
   }
 }
 .sec-buyzo-case_btn {
@@ -2117,8 +2108,8 @@ input.btn_download {
 }
 @media only screen and (max-width: 768px) {
   .sec-buyzo-case_btn {
-    margin-top: min((30 / var(--content-width)) * 100vw, 30 * 1px);
-    font-size: calc((16 / var(--em)) * 1rem);
+    margin-top: min(30 / var(--content-width) * 100vw, 30 * 1px);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 769px) {
@@ -2152,12 +2143,12 @@ input[type=email] {
 }
 @media only screen and (max-width: 640px) {
   .form-rabel {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .form-rabel {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 .form-rabel::after {
@@ -2165,7 +2156,6 @@ input[type=email] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 100%;
@@ -2173,12 +2163,12 @@ input[type=email] {
 }
 @media only screen and (max-width: 640px) {
   .form-rabel::after {
-    font-size: calc((12 / var(--em)) * 1rem);
+    font-size: calc(12 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .form-rabel::after {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 .form-rabel.is-require::after {
@@ -2221,14 +2211,14 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .swiper-button-next,
-.swiper-button-prev {
-    width: min((60 / var(--content-width)) * 100vw, 60 * 1px);
-    width: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+  .swiper-button-prev {
+    width: min(60 / var(--content-width) * 100vw, 60 * 1px);
+    width: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
   .swiper-button-next,
-.swiper-button-prev {
+  .swiper-button-prev {
     width: 60px;
     height: 60px;
   }
@@ -2315,7 +2305,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-service-summary {
-    padding-block: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    padding-block: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2328,15 +2318,15 @@ html.lenis body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: min((20 / var(--content-width)) * 100vw, 20 * 1px);
-    margin-top: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    gap: min(20 / var(--content-width) * 100vw, 20 * 1px);
+    margin-top: min(20 / var(--content-width) * 100vw, 20 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-service-summary_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: min((40 / var(--content-width)) * 100vw, 40 * 1px);
+    gap: min(40 / var(--content-width) * 100vw, 40 * 1px);
     margin-top: 40px;
   }
 }
@@ -2363,12 +2353,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-service-summary_item_ttl {
-    font-size: calc((20 / var(--em)) * 1rem);
+    font-size: calc(20 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-service-summary_item_ttl {
-    font-size: calc((22 / var(--em)) * 1rem);
+    font-size: calc(22 / var(--em) * 1rem);
   }
 }
 .sec-service-summary_item_ttl strong {
@@ -2376,12 +2366,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-service-summary_item_ttl strong {
-    font-size: calc((28 / var(--em)) * 1rem);
+    font-size: calc(28 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-service-summary_item_ttl strong {
-    font-size: calc((32 / var(--em)) * 1rem);
+    font-size: calc(32 / var(--em) * 1rem);
   }
 }
 .sec-service-summary_item_contents {
@@ -2392,12 +2382,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-service-summary_item_contents.list-rect li {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-service-summary_item_contents.list-rect li {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 .sec-service-summary_item_contents.list-rect li::before {
@@ -2408,7 +2398,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-service-summary_targeting {
-    margin-top: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    margin-top: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2443,12 +2433,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-service-summary_targeting_item_main {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-service-summary_targeting_item_main {
-    font-size: calc((36 / var(--em)) * 1rem);
+    font-size: calc(36 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2470,7 +2460,7 @@ html.lenis body {
   border-radius: 0 10px 10px 0;
 }
 .sec-service-summary_targeting_item + .sec-service-summary_targeting_item {
-  margin-top: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+  margin-top: min(60 / var(--content-width) * 100vw, 60 * 1px);
 }
 .sec-service-summary_targeting_item + .sec-service-summary_targeting_item::before {
   content: "";
@@ -2480,15 +2470,15 @@ html.lenis body {
   translate: -50% -150%;
   display: block;
   background: #0096E0;
-  height: min((30 / var(--content-width)) * 100vw, 30 * 1px);
-  width: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+  height: min(30 / var(--content-width) * 100vw, 30 * 1px);
+  width: min(60 / var(--content-width) * 100vw, 60 * 1px);
   -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
           clip-path: polygon(0 0, 50% 100%, 100% 0);
 }
 
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization {
-    padding-block: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    padding-block: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2498,7 +2488,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_item {
-    margin-top: min((30 / var(--content-width)) * 100vw, 30 * 1px);
+    margin-top: min(30 / var(--content-width) * 100vw, 30 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2530,12 +2520,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_item_ttl_sub {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_item_ttl_sub {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2550,7 +2540,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_item_img_01 {
-    height: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    height: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2560,7 +2550,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_item_img_02 {
-    height: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    height: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2570,7 +2560,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_item_img_03 {
-    height: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    height: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2580,7 +2570,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_item + .sec-bi-visualization_item {
-    margin-top: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    margin-top: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2611,12 +2601,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_beacon_ttl {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_beacon_ttl {
-    font-size: calc((24 / var(--em)) * 1rem);
+    font-size: calc(24 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2673,7 +2663,7 @@ html.lenis body {
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_report_list {
     grid-template-columns: 1fr;
-    gap: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    gap: min(20 / var(--content-width) * 100vw, 20 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2724,22 +2714,22 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_report_item_hd span {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_report_item_hd span {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_report_item_hd strong {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_report_item_hd strong {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 .sec-bi-visualization_report_item_body {
@@ -2748,12 +2738,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_report_item_body {
-    font-size: calc((13 / var(--em)) * 1rem);
+    font-size: calc(13 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_report_item_body {
-    font-size: calc((15 / var(--em)) * 1rem);
+    font-size: calc(15 / var(--em) * 1rem);
   }
 }
 .sec-bi-visualization_report_item_img {
@@ -2766,12 +2756,12 @@ html.lenis body {
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_report_item_img {
-    width: min((230 / var(--content-width)) * 100vw, 230 * 1px);
+    width: min(230 / var(--content-width) * 100vw, 230 * 1px);
   }
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_report_example {
-    margin-top: min((40 / var(--content-width)) * 100vw, 40 * 1px);
+    margin-top: min(40 / var(--content-width) * 100vw, 40 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2786,12 +2776,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_report_example_ttl {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_report_example_ttl {
-    font-size: calc((24 / var(--em)) * 1rem);
+    font-size: calc(24 / var(--em) * 1rem);
   }
 }
 .sec-bi-visualization_report_example_table {
@@ -2821,7 +2811,6 @@ html.lenis body {
 @media only screen and (min-width: 769px) {
   .sec-bi-visualization_report_example_table_wrap {
     border: 1px solid #DADCDE;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -2836,12 +2825,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_report_example_table th, .sec-bi-visualization_report_example_table td {
-    font-size: calc((14 / var(--em)) * 1rem);
+    font-size: calc(14 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_report_example_table th, .sec-bi-visualization_report_example_table td {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 .sec-bi-visualization_report_example_table th {
@@ -2857,7 +2846,7 @@ html.lenis body {
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_data {
     margin-top: 2em;
-    gap: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    gap: min(20 / var(--content-width) * 100vw, 20 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2877,7 +2866,7 @@ html.lenis body {
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_privacy {
     padding: 2em 1em;
-    margin-top: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    margin-top: min(20 / var(--content-width) * 100vw, 20 * 1px);
     line-height: 1.5;
   }
 }
@@ -2892,12 +2881,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_privacy strong {
-    font-size: calc((20 / var(--em)) * 1rem);
+    font-size: calc(20 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_privacy strong {
-    font-size: calc((26 / var(--em)) * 1rem);
+    font-size: calc(26 / var(--em) * 1rem);
   }
 }
 .sec-bi-visualization_privacy p {
@@ -2905,12 +2894,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_privacy p {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-bi-visualization_privacy p {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 .sec-bi-visualization_privacy p span {
@@ -2921,7 +2910,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-bi-visualization_difference {
-    margin-top: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    margin-top: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2937,7 +2926,7 @@ html.lenis body {
 
 @media only screen and (max-width: 640px) {
   .sec-targeting-ad {
-    padding-block: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    padding-block: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2951,8 +2940,8 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-targeting-ad_lead {
-    margin-top: min((30 / var(--content-width)) * 100vw, 30 * 1px);
-    gap: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    margin-top: min(30 / var(--content-width) * 100vw, 30 * 1px);
+    gap: min(20 / var(--content-width) * 100vw, 20 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -2967,12 +2956,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-targeting-ad_lead_txt {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-targeting-ad_lead_txt {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
 }
 .sec-targeting-ad_lead_txt + .sec-targeting-ad_lead_txt {
@@ -2982,7 +2971,7 @@ html.lenis body {
   display: block;
   margin-inline: auto;
   width: 60vw;
-  margin-bottom: min((30 / var(--content-width)) * 100vw, 30 * 1px);
+  margin-bottom: min(30 / var(--content-width) * 100vw, 30 * 1px);
 }
 .sec-targeting-ad_media {
   border: 2px solid #DADCDE;
@@ -3011,19 +3000,19 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-targeting-ad_media_ttl {
-    font-size: calc((20 / var(--em)) * 1rem);
+    font-size: calc(20 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-targeting-ad_media_ttl {
-    font-size: calc((24 / var(--em)) * 1rem);
+    font-size: calc(24 / var(--em) * 1rem);
   }
 }
 @media only screen and (max-width: 640px) {
   .sec-targeting-ad_media_list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: min((30 / var(--content-width)) * 100vw, 30 * 1px);
+    row-gap: min(30 / var(--content-width) * 100vw, 30 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -3035,7 +3024,7 @@ html.lenis body {
 @media only screen and (max-width: 640px) {
   .sec-targeting-ad_media_list li {
     height: 20vw;
-    padding-inline: min((15 / var(--content-width)) * 100vw, 15 * 1px);
+    padding-inline: min(15 / var(--content-width) * 100vw, 15 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -3061,7 +3050,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-targeting-modelcase {
-    padding-block: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    padding-block: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -3071,7 +3060,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-targeting-modelcase_item {
-    margin-top: min((40 / var(--content-width)) * 100vw, 40 * 1px);
+    margin-top: min(40 / var(--content-width) * 100vw, 40 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -3088,7 +3077,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 768px) {
   .sec-targeting-modelcase_item_body {
-    gap: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    gap: min(20 / var(--content-width) * 100vw, 20 * 1px);
   }
   .sec-targeting-modelcase_item_body img {
     max-width: 100%;
@@ -3105,7 +3094,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-targeting-modelcase_item + .sec-targeting-modelcase_item {
-    margin-top: min((60 / var(--content-width)) * 100vw, 60 * 1px);
+    margin-top: min(60 / var(--content-width) * 100vw, 60 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -3120,7 +3109,7 @@ html.lenis body {
 @media only screen and (max-width: 640px) {
   .sec-targeting-modelcase_arrow img {
     width: 70vw;
-    margin-block: min((40 / var(--content-width)) * 100vw, 40 * 1px) min((30 / var(--content-width)) * 100vw, 30 * 1px);
+    margin-block: min(40 / var(--content-width) * 100vw, 40 * 1px) min(30 / var(--content-width) * 100vw, 30 * 1px);
   }
 }
 @media only screen and (min-width: 641px) {
@@ -3136,7 +3125,7 @@ html.lenis body {
 @media only screen and (max-width: 768px) {
   .sec-targeting-modelcase_analyze {
     padding: 1.5em 1em;
-    gap: min((20 / var(--content-width)) * 100vw, 20 * 1px);
+    gap: min(20 / var(--content-width) * 100vw, 20 * 1px);
   }
 }
 @media only screen and (min-width: 769px) {
@@ -3155,12 +3144,12 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-targeting-modelcase_analyze_ttl {
-    font-size: calc((22 / var(--em)) * 1rem);
+    font-size: calc(22 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-targeting-modelcase_analyze_ttl {
-    font-size: calc((35 / var(--em)) * 1rem);
+    font-size: calc(35 / var(--em) * 1rem);
   }
 }
 .sec-targeting-modelcase_analyze_txt {
@@ -3168,12 +3157,11 @@ html.lenis body {
 }
 @media only screen and (max-width: 640px) {
   .sec-targeting-modelcase_analyze_txt {
-    font-size: calc((16 / var(--em)) * 1rem);
+    font-size: calc(16 / var(--em) * 1rem);
   }
 }
 @media only screen and (min-width: 641px) {
   .sec-targeting-modelcase_analyze_txt {
-    font-size: calc((18 / var(--em)) * 1rem);
+    font-size: calc(18 / var(--em) * 1rem);
   }
-}
-/*# sourceMappingURL=service.css.map */
+}/*# sourceMappingURL=service.css.map */
