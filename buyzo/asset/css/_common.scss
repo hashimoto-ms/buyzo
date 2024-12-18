@@ -1998,15 +1998,12 @@ input.btn_download {
     display: grid;
     border-radius: 10px;
     @include l.sp() {
-      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
     }
     @include l.pc() {
-      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
     @include l.pc(768) {
-      grid-template-columns: repeat(4, 1fr);
     }
     li {
       border: 1px solid $color-border-default;
