@@ -1996,12 +1996,13 @@ input.btn_download {
   }
   &_list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     @include l.sp() {
       gap: 10px;
     }
     @include l.pc() {
-      gap: 20px;
+      gap: 18px;
     }
     @include l.pc(768) {
     }
@@ -2010,8 +2011,11 @@ input.btn_download {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-basis: 23%;
+      max-height: 96px;
       @include l.sp() {
         padding: 10px 15px;
+        flex-basis: 48%;
       }
       @include l.pc() {
         padding: 1em 2em;
