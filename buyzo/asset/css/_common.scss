@@ -1997,7 +1997,6 @@ input.btn_download {
   &_list {
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
     @include l.sp() {
       gap: 10px;
     }
